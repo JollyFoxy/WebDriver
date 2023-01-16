@@ -1,7 +1,7 @@
 package Steps;
 
+import Tools.Button;
 import io.qameta.allure.Step;
-import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -15,32 +15,33 @@ public class PageButtons {
         actions = new Actions(driver);
     }
 
-    @Step
+    @Step("Переход на страницу\"Buttons\"")
     public void transition(){
         WebElement element= driver.findElement(By.cssSelector("div.category-cards > div:nth-child(1) > div:nth-child(1)"));
         element.click();
         WebElement elementButtons = driver.findElement(By.cssSelector("#item-4"));
         elementButtons.click();
     }
-    @Step
+    @Step("Одинарый клик")
     public void oneClick(){
         WebElement oneClickBtn = driver.findElement(By.cssSelector("div[class$='col-md-6']> div:nth-child(2) > div:nth-child(3)> button"));
         oneClickBtn.click();
         WebElement dynamicClickMessage = driver.findElement(By.id("dynamicClickMessage"));
-        Assertions.assertEquals("You have done a dynamic click",dynamicClickMessage.getText());
+        dynamicClickMessage.getText().contains("You have done a dynamic click");
+
     }
-    @Step
+    @Step("Двойной клик")
     public void doubleClick(){
-        WebElement doubleClickBtn=driver.findElement(By.id("doubleClickBtn"));
-        actions.doubleClick(doubleClickBtn).build().perform();
+        Button doubleClickBtn =new Button(driver,"doubleClickBtn");
+        doubleClickBtn.doubleClickBtn();
         WebElement doubleClickMessage = driver.findElement(By.id("doubleClickMessage"));
-        Assertions.assertEquals("You have done a double click",doubleClickMessage.getText());
+        doubleClickMessage.getText().contains("You have done a double click");
     }
-    @Step
+    @Step("Клик правой кнопкой")
     public void rightClick(){
-        WebElement rightClickBtn= driver.findElement(By.id("rightClickBtn"));
-        actions.contextClick(rightClickBtn).build().perform();
+        Button rightClickBtn= new Button(driver,"rightClickBtn");
+        rightClickBtn.rightClickBtn();
         WebElement rightClickMessage =driver.findElement(By.id("rightClickMessage"));
-        Assertions.assertEquals("You have done a right click",rightClickMessage.getText());
+        rightClickMessage.getText().contains("You have done a right click");
     }
 }

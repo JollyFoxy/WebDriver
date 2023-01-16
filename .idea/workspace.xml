@@ -4,16 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11e0f38c-7096-4258-99a6-010b507940ea" name="Changes" comment="Update 1">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Staps/PageButtons.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/MainTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/TestButtons.java" afterDir="false" />
+    <list default="true" id="11e0f38c-7096-4258-99a6-010b507940ea" name="Changes" comment="Update 2">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Iinterfases/IAll.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Iinterfases/IPerson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Person/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Steps/PageTextBox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Tools/Button.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Tools/Input.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/PageTextBoxTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/ConfProperties.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/Xx.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/conf.project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Steps/PageButtons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Steps/PageButtons.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/MainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/TestButtons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/PageButtonsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +26,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -52,18 +56,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/pavel/IdeaProjects/WebDriver&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "Tests.MainTest",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers": "true",
+    "last_opened_file_path": "/home/pavel/IdeaProjects/TestToolsQA",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
-  <component name="RunManager" selected="JUnit.TestButtons.testing">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="Tests.MainTest" />
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Tests" />
+      <recent name="Tools" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.Tests in WebDriver">
     <configuration name="MainTest.testing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WebDriver" />
       <extension name="coverage">
@@ -80,7 +97,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestButtons" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PageButtonsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WebDriver" />
       <extension name="coverage">
         <pattern>
@@ -89,13 +106,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.TestButtons" />
+      <option name="MAIN_CLASS_NAME" value="Tests.PageButtonsTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestButtons.testing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PageButtonsTest.testing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WebDriver" />
       <extension name="coverage">
         <pattern>
@@ -104,14 +121,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.TestButtons" />
+      <option name="MAIN_CLASS_NAME" value="Tests.PageButtonsTest" />
       <option name="METHOD_NAME" value="testing" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestPageButtons" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PageTextBoxTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WebDriver" />
       <extension name="coverage">
         <pattern>
@@ -120,35 +137,27 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.TestPageButtons" />
+      <option name="MAIN_CLASS_NAME" value="Tests.PageTextBoxTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestPageButtons.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Tests in WebDriver" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WebDriver" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.TestPageButtons" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java/Tests" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestButtons.testing" />
-        <item itemvalue="JUnit.TestButtons" />
+        <item itemvalue="JUnit.Tests in WebDriver" />
+        <item itemvalue="JUnit.PageButtonsTest" />
+        <item itemvalue="JUnit.PageTextBoxTest" />
+        <item itemvalue="JUnit.PageButtonsTest.testing" />
         <item itemvalue="JUnit.MainTest.testing" />
-        <item itemvalue="JUnit.TestPageButtons.test" />
-        <item itemvalue="JUnit.TestPageButtons" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673851924986</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Update 2">
+      <created>1673867035278</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1673867035278</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -196,6 +212,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 1" />
+    <MESSAGE value="Update 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 2" />
   </component>
 </project>
