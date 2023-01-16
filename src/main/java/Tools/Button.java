@@ -22,5 +22,4 @@ public class Button {
     public void rightClickBtn(){
         actions.contextClick(button).build().perform();
     }
-
 }

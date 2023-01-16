@@ -42,5 +42,6 @@ public class PageTextBox {
     @Step
     public void clickSubmit(){
         Button submit =new Button(driver,"submit");
+        submit.clickBtn();
     }
 }
