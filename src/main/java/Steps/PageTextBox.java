@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class PageTextBox {
-    WebDriver driver;
+    private final WebDriver driver;
     public PageTextBox(WebDriver driver){
         this.driver=driver;
     }
