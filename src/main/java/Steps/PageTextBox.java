@@ -2,6 +2,7 @@ package Steps;
 
 import Tools.Button;
 import Tools.Input;
+import Tools.P;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -42,6 +43,11 @@ public class PageTextBox {
     @Step
     public void clickSubmit(){
         Button submit =new Button(driver,"submit");
-        submit.clickBtn();
+        submit.jsClickBtn();
+    }
+    @Step
+    public void check(){
+        P name =new P(driver,"name");
+        name.checkValueP("Лёлик");
     }
 }

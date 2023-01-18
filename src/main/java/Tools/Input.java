@@ -12,4 +12,8 @@ public class Input {
     public void setValueInput(String value){
         input.sendKeys(value);
     }
+
+    public String  getValueInput() {
+        return input.getText();
+    }
 }

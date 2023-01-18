@@ -13,7 +13,7 @@ public class MainTest implements IAll {
     @BeforeEach
     public void setup() {
         System.setProperty("webdriver.chrome.driver","/home/pavel/Documents/chromedriver");
-        option.setHeadless(true);
+//        option.setHeadless(true);
         driver=new ChromeDriver(option);
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.manage().window().maximize();

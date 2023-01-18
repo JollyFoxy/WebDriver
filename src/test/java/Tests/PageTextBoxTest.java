@@ -15,5 +15,6 @@ class PageTextBoxTest extends MainTest implements IPerson {
         textBox.inputCurrentAddress(person.getCurrentAddress());
         textBox.inputPermanentAddress(person.getPermanentAddress());
         textBox.clickSubmit();
+        textBox.check();
     }
 }
